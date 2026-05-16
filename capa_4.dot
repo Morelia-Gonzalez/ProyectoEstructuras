@@ -1,0 +1,32 @@
+digraph MatrizDispersa {
+  rankdir=LR;
+  node [shape=record fontsize=10];
+  label="Capa 4 - capa_4 (Matriz Dispersa)";
+  labelloc=t;
+
+  matriz [label="matriz | id=4" shape=record fillcolor=lightblue style=filled];
+  fila_1 [label="{1}" fillcolor=lightyellow style=filled];
+  matriz -> fila_1;
+  nodo_1_1 [label="{col=1 | f39c12}" fillcolor="#f39c12" style=filled];
+  fila_1 -> nodo_1_1;
+  nodo_1_2 [label="{col=2 | f39c12}" fillcolor="#f39c12" style=filled];
+  nodo_1_1 -> nodo_1_2;
+  nodo_1_3 [label="{col=3 | f39c12}" fillcolor="#f39c12" style=filled];
+  nodo_1_2 -> nodo_1_3;
+  fila_2 [label="{2}" fillcolor=lightyellow style=filled];
+  fila_1 -> fila_2;
+  nodo_2_1 [label="{col=1 | f39c12}" fillcolor="#f39c12" style=filled];
+  fila_2 -> nodo_2_1;
+  nodo_2_2 [label="{col=2 | f1c40f}" fillcolor="#f1c40f" style=filled];
+  nodo_2_1 -> nodo_2_2;
+  nodo_2_3 [label="{col=3 | f39c12}" fillcolor="#f39c12" style=filled];
+  nodo_2_2 -> nodo_2_3;
+  fila_3 [label="{3}" fillcolor=lightyellow style=filled];
+  fila_2 -> fila_3;
+  nodo_3_1 [label="{col=1 | f39c12}" fillcolor="#f39c12" style=filled];
+  fila_3 -> nodo_3_1;
+  nodo_3_2 [label="{col=2 | f39c12}" fillcolor="#f39c12" style=filled];
+  nodo_3_1 -> nodo_3_2;
+  nodo_3_3 [label="{col=3 | f39c12}" fillcolor="#f39c12" style=filled];
+  nodo_3_2 -> nodo_3_3;
+}

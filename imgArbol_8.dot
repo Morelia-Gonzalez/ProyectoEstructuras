@@ -1,0 +1,40 @@
+digraph ImagenYArbol {
+  node [shape=record fontsize=10];
+  label="Imagen 8 y su arbol de capas";
+  labelloc=t;
+
+  subgraph cluster_lista {
+  label="Lista de capas";
+  color=blue;
+    lc_0 [label="capa_1" fillcolor=lightyellow style=filled];
+    lc_1 [label="capa_2" fillcolor=lightyellow style=filled];
+    lc_0 -> lc_1;
+    lc_2 [label="capa_3" fillcolor=lightyellow style=filled];
+    lc_1 -> lc_2;
+    lc_3 [label="capa_4" fillcolor=lightyellow style=filled];
+    lc_2 -> lc_3;
+  }
+
+  subgraph cluster_abb {
+  label="ABB Capas";
+  color=green;
+  tcapa_1 [label="{capa_1 | capa_1}" shape=record fillcolor=orange style=filled];
+  tcapa_1 -> tcapa_2;
+  tcapa_2 [label="{capa_2 | capa_2}" shape=record fillcolor=orange style=filled];
+  tcapa_2 -> tcapa_3;
+  tcapa_3 [label="{capa_3 | capa_3}" shape=record fillcolor=orange style=filled];
+  tcapa_3 -> tcapa_4;
+  tcapa_4 [label="{capa_4 | capa_4}" shape=record fillcolor=orange style=filled];
+  tcapa_4 -> tcapa_5;
+  tcapa_5 [label="{capa_5 | capa_5}" shape=record fillcolor=lightgreen style=filled];
+  tcapa_5 -> tcapa_6;
+  tcapa_6 [label="{capa_6 | capa_6}" shape=record fillcolor=lightgreen style=filled];
+  tcapa_6 -> tcapa_8;
+  tcapa_8 [label="{capa_8 | capa_8}" shape=record fillcolor=lightgreen style=filled];
+  }
+
+  lc_0 -> tcapa_1 [color=red style=dashed label="ptr"];
+  lc_1 -> tcapa_2 [color=red style=dashed label="ptr"];
+  lc_2 -> tcapa_3 [color=red style=dashed label="ptr"];
+  lc_3 -> tcapa_4 [color=red style=dashed label="ptr"];
+}

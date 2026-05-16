@@ -1,0 +1,31 @@
+digraph ABBUsuarios {
+  node [shape=record fontsize=10];
+  label="Arbol Binario de Busqueda - Usuarios";
+  labelloc=t;
+
+  usr_userM [label="{userM}" shape=record fillcolor=lightblue style=filled];
+  usr_userM -> usr_userB [label="izq"];
+  usr_userB [label="{userB}" shape=record fillcolor=lightblue style=filled];
+  usr_userB -> usr_userA [label="izq"];
+  usr_userA [label="{userA}" shape=record fillcolor=lightblue style=filled];
+  uimg_userA_0 [label="img_14" fillcolor=lightyellow style=filled];
+  usr_userA -> uimg_userA_0 [color=darkgreen];
+  usr_userA -> usr_Morelia [label="izq"];
+  usr_Morelia [label="{Morelia}" shape=record fillcolor=lightblue style=filled];
+  usr_Morelia -> usr_Jose [label="izq"];
+  usr_Jose [label="{Jose}" shape=record fillcolor=lightblue style=filled];
+  uimg_Jose_0 [label="img_14" fillcolor=lightyellow style=filled];
+  usr_Jose -> uimg_Jose_0 [color=darkgreen];
+  usr_Jose -> usr_Maria [label="der"];
+  usr_Maria [label="{Maria}" shape=record fillcolor=lightblue style=filled];
+  uimg_Maria_0 [label="img_6" fillcolor=lightyellow style=filled];
+  usr_Maria -> uimg_Maria_0 [color=darkgreen];
+  usr_userB -> usr_userC [label="der"];
+  usr_userC [label="{userC}" shape=record fillcolor=lightblue style=filled];
+  usr_userM -> usr_userY [label="der"];
+  usr_userY [label="{userY}" shape=record fillcolor=lightblue style=filled];
+  usr_userY -> usr_userZ [label="der"];
+  usr_userZ [label="{userZ}" shape=record fillcolor=lightblue style=filled];
+  uimg_userZ_0 [label="img_6" fillcolor=lightyellow style=filled];
+  usr_userZ -> uimg_userZ_0 [color=darkgreen];
+}

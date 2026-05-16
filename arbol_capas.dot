@@ -1,0 +1,19 @@
+digraph ABBCapas {
+  node [shape=record fontsize=10];
+  label="Arbol Binario de Busqueda - Capas";
+  labelloc=t;
+
+  capa_1 [label="{capa_1 | capa_1}" shape=record fillcolor=lightgreen style=filled];
+  capa_1 -> capa_2 [label="der"];
+  capa_2 [label="{capa_2 | capa_2}" shape=record fillcolor=lightgreen style=filled];
+  capa_2 -> capa_3 [label="der"];
+  capa_3 [label="{capa_3 | capa_3}" shape=record fillcolor=lightgreen style=filled];
+  capa_3 -> capa_4 [label="der"];
+  capa_4 [label="{capa_4 | capa_4}" shape=record fillcolor=lightgreen style=filled];
+  capa_4 -> capa_5 [label="der"];
+  capa_5 [label="{capa_5 | capa_5}" shape=record fillcolor=lightgreen style=filled];
+  capa_5 -> capa_6 [label="der"];
+  capa_6 [label="{capa_6 | capa_6}" shape=record fillcolor=lightgreen style=filled];
+  capa_6 -> capa_8 [label="der"];
+  capa_8 [label="{capa_8 | capa_8}" shape=record fillcolor=lightgreen style=filled];
+}
